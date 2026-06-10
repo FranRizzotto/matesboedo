@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mates Boedo</title>
+
+    <link rel="icon" href="mates.jpeg">
+    <link rel="stylesheet" href="matesboedo.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- BOTON MENU -->
+
+    <button class="boton-menu" onclick="abrirMenu()">☰</button>
+
+    <!-- INSTAGRAM -->
+
+    <a href="https://www.instagram.com/mates.boedo?igsh=N3JrY2d3eGM4YXNt"
+    target="_blank"
+    class="ig">
+
+        <img src="instagram.png" alt="Instagram">
+
+    </a>
+
+    <!-- MENU -->
+
+    
+<nav class="menu-lateral" id="menu">
+    <button class="cerrar-menu" onclick="cerrarMenu()">X</button>
+
+    <a href="#inicio" onclick="cerrarMenu()">Inicio</a>
+    
+    <div class="menu-item-desplegable">
+        <a href="javascript:void(0)" onclick="toggleSubMenu()" class="enlace-principal">Productos ▾</a>
+        <div id="sub-menu-productos" class="sub-menu-oculto">
+            <a href="#mates" onclick="cerrarMenu()">Mates</a>
+            <a href="#accesorios" onclick="cerrarMenu()">Accesorios</a>
+            <a href="#bombillones" onclick="cerrarMenu()">Bombillones</a>
+            <a href="#yerbas" onclick="cerrarMenu()">Yerbas</a>
+        </div>
+    </div>
+
+    <a href="#contacto" onclick="cerrarMenu()">Contacto</a>
+</nav>
+
+
+
+    <!-- INICIO -->
+
+    <section id="inicio" class="inicio">
+
+        <div class="contenido-inicio">
+
+            <h1>MATES BOEDO</h1>
+
+            <p>
+                Sabor, tradición y barrio<br>
+                en cada mate.
+            </p>
+
+            <a href="#productos" class="btn">EMPECEMOS</a>
+
+        </div>
+
+    </section>
+
+    <!-- PRODUCTOS -->
+
+    <section id="productos" class="productos">
+
+        <h2>Productos</h2>
+
+        
+<div class="contenedor-productos">
+
+    <!-- MATES -->
+
+    <h2 id="mates" class="categoria-productos">MATES</h2>
+
+    <div class="producto">
+        <a href="producto.html?id=imperial_liso" class="producto-link">
+            <div class="slider">
+                <img src="./Fotos/imperiallisonegro.jpeg" class="imagen-activa">
+                <img src="./Fotos/imperiallisorojo.jpeg">
+                <img src="./Fotos/imperiallisosuela.jpeg">
+
+                <button class="prev" type="button">‹</button>
+                <button class="next" type="button">›</button>
+            </div>
+
+            <h3>Imperial Liso</h3>
+            <p>Negro, Bordo y Suela.</p>
+            <span>$25.000</span>
+        </a>
+
+        
+    </div>
+
+    <div class="producto">
+        <a href="producto.html?id=imperial_croco" class="producto-link">
+            <div class="slider">
+                <img src="./Fotos/imperialcrococonbolitas.jpeg" class="imagen-activa">
+                
+            
+
+                <button class="prev" type="button">‹</button>
+                <button class="next" type="button">›</button>
+            </div>
+
+            <h3>Imperial Croco con Bolitas</h3>
+            <p>Negro y Bordo.</p>
+            <span>$33.000</span>
+        </a>
+
+       
+    </div>
+
+    <div class="producto">
+        <a href="producto.html?id=torpedo_cincelado" class="producto-link">
+            <div class="slider">
+                <img src="./Fotos/torpedocincelado.jpeg" class="imagen-activa">
+               
+
+                <button class="prev" type="button">‹</button>
+                <button class="next" type="button">›</button>
+            </div>
+
+            <h3>Torpedo Cincelado</h3>
+            <p>Diseño artesanal premium.</p>
+            <span>$25.000</span>
+        </a>
+
+        
+    </div>
+
+    
+
+    <div class="producto">
+        <a href="producto.html?id=torpedo_liso" class="producto-link">
+            <div class="slider">
+                <img src="./Fotos/torpedoliso.jpeg" class="imagen-activa">
+            
+            
+
+                <button class="prev" type="button">‹</button>
+                <button class="next" type="button">›</button>
+            </div>
+
+            <h3>Torpedo Liso</h3>
+            <p>Negro y bordo.</p>
+            <span>$23.000</span>
+        </a>
+
+      
+    </div>
+
+    <!-- ACCESORIOS -->
+    
+    <h2 id="accesorios" class="categoria-productos">ACCESORIOS</h2>
+
+
+    <div class="producto">
+        <a href="producto.html?id=matera_cuero" class="producto-link">
+            <div class="slider">
+                <img src="./Fotos/materadecuero.jpeg" class="imagen-activa">
+        
+
+                <button class="prev" type="button">‹</button>
+                <button class="next" type="button">›</button>
+            </div>
+
+            <h3>Matera Cuero</h3>
+            <p>Matera cuero con diseño premium.</p>
+            <span>$35.000</span>
+        </a>
+
+        
+    </div>
+
+    <!-- YERBAS -->
+
+    <h2 id="yerbas" class="categoria-productos">YERBAS</h2>
+
+    <div class="producto">
+        <a href="producto.html?id=verdecita" class="producto-link">
+            <div class="slider">
+                <img src="./Fotos/verdecitakg.jpeg" class="imagen-activa">
+                
+                <button class="prev" type="button">‹</button>
+                <button class="next" type="button">›</button>
+            </div>
+
+            <h3>Verdecita Kg</h3>
+            <p>Yerba con padron uruguayo.</p>
+            <span>$9.000</span>
+        </a>
+
+       
+    </div>
+
+
+<div class="producto">
+        <a href="producto.html?id=Baldo_kg" class="producto-link">
+            <div class="slider">
+                <img src="./Fotos/baldokg.jpeg" class="imagen-activa">
+                
+                <button class="prev" type="button">‹</button>
+                <button class="next" type="button">›</button>
+            </div>
+
+            <h3>Baldo Kg</h3>
+            <p>Yerba con padron uruguayo.</p>
+            <span>$11.500</span>
+        </a>
+
+       
+    </div>
+<div class="producto">
+        <a href="producto.html?id=sara_kg" class="producto-link">
+            <div class="slider">
+                <img src="./Fotos/Sarakg.jpeg" class="imagen-activa">
+                
+                <button class="prev" type="button">‹</button>
+                <button class="next" type="button">›</button>
+            </div>
+
+            <h3>Sara Kg</h3>
+            <p>Yerba con padron uruguayo.</p>
+            <span>$11.500</span>
+        </a>
+
+        
+    </div>
+
+     </section>
+    
+
+    <!-- CONTACTO -->
+
+    <section id="contacto" class="contacto">
+
+        <h2>Contacto</h2>
+
+        <p class="texto-contacto">
+            ¿Tenés alguna duda o querés hacer un pedido? 👇
+        </p>
+
+        <div class="contacto-botones">
+
+            <a href="https://wa.me/5491150371281?text=Hola%20me%20interesa%20un%20mate"
+            target="_blank"
+            class="btn-wsp">
+
+                WhatsApp
+
+            </a>
+
+            <a href="https://www.instagram.com/santi.alempartee?igsh=MXRkczBudm8xOWk5Ng=="
+            target="_blank"
+            class="btn-ig">
+
+                Instagram
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <script src="matesboedo.js"></script>
+
+</body>
+</html>

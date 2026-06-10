@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto - Mates Boedo</title>
+
+    <link rel="icon" href="mates.jpeg">
+    <link rel="stylesheet" href="matesboedo.css">
+</head>
+
+<body>
+
+    <button class="boton-menu" onclick="abrirMenu()">☰</button>
+
+    <a href="https://www.instagram.com/mates.boedo?igsh=N3JrY2d3eGM4YXNt" target="_blank" class="ig">
+        <img src="instagram.png" alt="Instagram">
+    </a>
+
+    <nav class="menu-lateral" id="menu">
+        <button class="cerrar-menu" onclick="cerrarMenu()">X</button>
+
+        <a href="index.html#inicio" onclick="cerrarMenu()">Inicio</a>
+        <a href="index.html#productos" onclick="cerrarMenu()">Productos</a>
+        <a href="index.html#contacto" onclick="cerrarMenu()">Contacto</a>
+    </nav>
+
+    <main class="pagina-producto">
+
+        <section class="detalle-producto">
+
+            <div class="galeria-producto">
+                <img id="imagen-principal" class="imagen-principal" src="" alt="Producto">
+
+                <div id="miniaturas" class="miniaturas"></div>
+            </div>
+
+            <div class="info-producto">
+                <h1 id="nombre-producto"></h1>
+
+                <p id="descripcion-producto"></p>
+
+                <span id="precio-producto"></span>
+
+                <a id="boton-whatsapp" href="#" target="_blank" class="btn boton-comprar">
+                    Comprar por WhatsApp
+                </a>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="matesboedo.js"></script>
+    <script src="producto.js"></script>
+
+</body>
+</html>
